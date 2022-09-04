@@ -42,10 +42,10 @@ class Patient:
         self.LoginFrame2 = Frame(self.frame,width=400,height=80,relief="ridge",bg="cadet blue",bd=20)
         self.LoginFrame2.grid(row=2,column=0)
         #===========LABELS=============          
-       # self.lblpatid = Label(self.LoginFrame,text="PATIENT ID",font="Helvetica 14 bold",bg="cadet blue",bd=22)
-        #self.lblpatid.grid(row=0,column=0)
-       # self.lblpatid  = Entry(self.LoginFrame,font="Helvetica 14 bold",bd=2,textvariable= self.pat_ID)
-       # self.lblpatid.grid(row=0,column=1)
+        self.lblpatid = Label(self.LoginFrame,text="PATIENT ID",font="Helvetica 14 bold",bg="cadet blue",bd=22)
+        self.lblpatid.grid(row=0,column=0)
+        self.lblpatid  = Entry(self.LoginFrame,font="Helvetica 14 bold",bd=2,textvariable= self.pat_ID)
+        self.lblpatid.grid(row=0,column=1)
         
         self.lblPatname = Label(self.LoginFrame,text="PATIENT NAME",font="Helvetica 14 bold",bg="cadet blue",bd=22)
         self.lblPatname.grid(row=1,column=0)
